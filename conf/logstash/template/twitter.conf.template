@@ -1,0 +1,16 @@
+input {
+  twitter {
+    consumer_key => ""
+    consumer_secret => ""
+    oauth_token => ""
+    oauth_token_secret => ""
+    keywords => ["foo"]
+  }
+}
+output {
+  elasticsearch {
+    hosts => [ "localhost:9200" ]
+    index => "twitter"
+    document_type => "type1"
+  }
+}
