@@ -20,6 +20,7 @@ function install_formula() {
     elasticsearch --version
     brew install logstash
     logstash --version
+    logstash-plugin install logstash-output-amazon_es
     brew install kibana
     kibana --version
 }
